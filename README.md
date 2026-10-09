@@ -1,4 +1,4 @@
-# When Credit AI Is Wrong - reproducibility package v2
+# When Credit AI Is Wrong - reproducibility 
 
 **Status: complete, executable reconstruction of the historical-credit protocol;
 not recovery of the original numerical experiment.**
