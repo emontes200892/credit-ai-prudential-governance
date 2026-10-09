@@ -1,0 +1,48 @@
+{
+  "status": 200,
+  "statusText": "OK",
+  "data": {
+    "uci_id": 573,
+    "name": "South German Credit",
+    "repository_url": "https://archive.ics.uci.edu/dataset/573/south+german+credit+update",
+    "data_url": null,
+    "abstract": "700 good and 300 bad credits with 20 predictor variables. Data from 1973 to 1975. Stratified sample from actual credits with bad credits heavily oversampled. A cost matrix can be used.",
+    "area": "Business",
+    "tasks": [
+      "Classification",
+      "Regression",
+      "Clustering"
+    ],
+    "characteristics": [
+      "Multivariate"
+    ],
+    "num_instances": 1000,
+    "num_features": 21,
+    "feature_types": [
+      "Integer",
+      "Real"
+    ],
+    "demographics": [],
+    "target_col": null,
+    "index_col": null,
+    "has_missing_values": "no",
+    "missing_values_symbol": null,
+    "year_of_dataset_creation": 2020,
+    "last_updated": "Sat Mar 16 2024",
+    "dataset_doi": "10.24432/C5QG88",
+    "creators": [],
+    "intro_paper": null,
+    "variables": [],
+    "additional_info": {
+      "summary": "The widely used Statlog German credit data ([https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)]), as of November 2019, suffers from severe errors in the coding information and does not come with any background information. The 'South German Credit' data provide a correction and some background information, based on the Open Data LMU (2010) representation of the same data and several other German language resources.",
+      "purpose": null,
+      "funded_by": null,
+      "instances_represent": null,
+      "recommended_data_splits": null,
+      "sensitive_data": null,
+      "preprocessing_description": null,
+      "variable_info": "## This section contains a brief description for each attribute.\r\n## Details on attribute coding can be obtained from the accompanying R code for reading the data\r\n## or the accompanying code table,\r\n## as well as from Groemping (2019) (listed under 'Relevant Papers').\r\n\r\nColumn name: laufkont\r\nVariable name: status\r\nContent: status of the debtor's checking account with the bank (categorical)\r\n\r\nColumn name: laufzeit\r\nVariable name: duration\r\nContent: credit duration in months (quantitative)\r\n\r\nColumn name: moral\r\nVariable name: credit_history\r\nContent: history of compliance with previous or concurrent credit contracts (categorical)\r\n\r\nColumn name: verw\r\nVariable name: purpose\r\nContent: purpose for which the credit is needed (categorical)\r\n\r\nColumn name: hoehe\r\nVariable name: amount\r\nContent: credit amount in DM (quantitative; result of monotonic transformation; actual data and type of\r\ntransformation unknown)\r\n\r\nColumn name: sparkont\r\nVariable name: savings\r\nContent: debtor's savings (categorical)\r\n\r\nColumn name: beszeit\r\nVariable name: employment_duration\r\nContent: duration of debtor's employment with current employer (ordinal; discretized quantitative)\r\n\r\nColumn name: rate\r\nVariable name: installment_rate\r\nContent: credit installments as a percentage of debtor's disposable income (ordinal; discretized quantitative)\r\n\r\nColumn name: famges\r\nVariable name: personal_status_sex\r\nContent: combined information on sex and marital status; categorical; sex cannot be recovered from the\r\nvariable, because male singles and female non-singles are coded with the same code (2); female widows cannot\r\nbe easily classified, because the code table does not list them in any of the female categories\r\n\r\nColumn name: buerge\r\nVariable name: other_debtors\r\nContent: Is there another debtor or a guarantor for the credit? (categorical)\r\n\r\nColumn name: wohnzeit\r\nVariable name: present_residence\r\nContent: length of time (in years) the debtor lives in the present residence (ordinal; discretized quantitative)\r\n\r\nColumn name: verm\r\nVariable name: property\r\nContent: the debtor's most valuable property, i.e. the highest possible code is used. Code 2 is used, if codes 3\r\nor 4 are not applicable and there is a car or any other relevant property that does not fall under variable\r\nsparkont. (ordinal)\r\n\r\nColumn name: alter\r\nVariable name: age\r\nContent: age in years (quantitative)\r\n\r\nColumn name: weitkred\r\nVariable name: other_installment_plans\r\nContent: installment plans from providers other than the credit-giving bank (categorical)\r\n\r\nColumn name: wohn\r\nVariable name: housing\r\nContent: type of housing the debtor lives in (categorical)\r\n\r\nColumn name: bishkred\r\nVariable name: number_credits\r\nContent: number of credits including the current one the debtor has (or had) at this bank (ordinal, discretized\r\nquantitative); contrary to Fahrmeir and Hamerle\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u201e\u00a2s (1984) statement, the original data values are not available.\r\n\r\nColumn name: beruf\r\nVariable name: job\r\nContent: quality of debtor's job (ordinal)\r\n\r\nColumn name: pers\r\nVariable name: people_liable\r\nContent: number of persons who financially depend on the debtor (i.e., are entitled to maintenance) (binary,\r\ndiscretized quantitative)\r\n\r\nColumn name: telef\r\nVariable name: telephone\r\nContent: Is there a telephone landline registered on the debtor's name? (binary; remember that the data are\r\nfrom the 1970s)\r\n\r\nColumn name: gastarb\r\nVariable name: foreign_worker\r\nContent: Is the debtor a foreign worker? (binary)\r\n\r\nColumn name: kredit\r\nVariable name: credit_risk\r\nContent: Has the credit contract been complied with (good) or not (bad) ? (binary)",
+      "citation": null
+    }
+  }
+}

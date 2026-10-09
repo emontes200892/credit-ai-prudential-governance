@@ -1,0 +1,16 @@
+{
+  "dataset": "South German Credit",
+  "uci_id_downloaded": 573,
+  "doi": "10.24432/C5QG88",
+  "retrieved": "2026-10-09",
+  "source_url": "https://archive.ics.uci.edu/static/public/573/south%2Bgerman%2Bcredit%2Bupdate.zip",
+  "license": "CC BY 4.0",
+  "target_source": "kredit: 0=bad, 1=good",
+  "target_analysis": "bad_credit = 1 - kredit; 1=bad, 0=good",
+  "rows_preserved_in_order": 1000,
+  "canonical_transformations": [
+    "German-to-English field-name mapping",
+    "Explicit binary target inversion"
+  ],
+  "sha256_source_archive": "0b40d40eb7321693d559e247a556f88a6cc8df8489c3cb2ae084db7592584551"
+}

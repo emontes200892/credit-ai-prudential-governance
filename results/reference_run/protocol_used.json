@@ -1,0 +1,98 @@
+{
+  "status": "PROTOCOL_RECONSTRUCTION_NOT_ORIGINAL_NUMERICAL_REPLICATION",
+  "split_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "training_seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "model_families": [
+    "LR",
+    "RF",
+    "GB"
+  ],
+  "weighting_regimes": [
+    "standard",
+    "balanced",
+    "idcs"
+  ],
+  "model_parameters": {
+    "LR": {
+      "C": 1.0,
+      "max_iter": 2000,
+      "solver": "lbfgs",
+      "tol": 0.0001
+    },
+    "RF": {
+      "n_estimators": 120,
+      "min_samples_leaf": 8,
+      "n_jobs": 1
+    },
+    "GB": {
+      "n_estimators": 100,
+      "max_depth": 2,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 10
+    }
+  },
+  "calibration": {
+    "C": 1.0,
+    "max_iter": 2000,
+    "solver": "lbfgs",
+    "tol": 0.0001
+  },
+  "bootstrap_reps": 2000,
+  "bootstrap_seed": 2026,
+  "uniform_threshold_grid_step": 0.005,
+  "loss_coefficient": 0.6,
+  "loss_fixed_term": 0.05,
+  "margin_intercept": 0.06,
+  "margin_duration_slope": 0.003,
+  "duration_cap": 60,
+  "sensitivity_loss_coefficients": [
+    0.3,
+    0.6,
+    0.9
+  ],
+  "sensitivity_margin_multipliers": [
+    0.5,
+    1.0,
+    1.5
+  ],
+  "review_budgets": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "review_cost": 0.01,
+  "review_scenarios": {
+    "no_improvement": [
+      0.0,
+      0.0
+    ],
+    "imperfect": [
+      0.5,
+      0.05
+    ],
+    "oracle_bound": [
+      1.0,
+      0.0
+    ]
+  },
+  "undefined_instability_fill": 0.5,
+  "lime_record_seed": 2026,
+  "lime_record_count": 20,
+  "lime_seeds": [
+    101,
+    202,
+    303
+  ],
+  "lime_samples": 1500,
+  "age_cutoff": 25
+}

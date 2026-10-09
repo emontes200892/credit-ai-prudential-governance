@@ -1,0 +1,3 @@
+age_group,n,bad_n,good_n,approval_n,bad_approval_n,good_rejection_n,approval_pct,bad_approval_pct,good_rejection_pct
+age <25,31,13,18,0,0,18,0.0,0.0,100.0
+age >=25,169,47,122,2,0,120,1.183431952662722,0.0,98.36065573770492

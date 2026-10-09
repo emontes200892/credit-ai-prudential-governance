@@ -1,0 +1,10 @@
+{
+  "weighted_neighborhood_r2": 0.4827287463730579,
+  "explainer_seed_overlap": 0.6433333333333333,
+  "cross_method_overlap": 0.5216666666666667,
+  "explanation_count": 60,
+  "record_count": 20,
+  "valid_seed_overlap_pairs": 60,
+  "valid_cross_method_overlap_count": 60,
+  "output_object": "LIME: calibrated bad-credit probability; SHAP: calibrated logit"
+}

@@ -1,0 +1,10 @@
+model,weighting,same_action_overlap,joint_denial_overlap,flip_rate
+LR,standard,.475,.440,.150
+LR,balanced,.453,.426,.151
+LR,idcs,.481,.473,.210
+RF,standard,.455,.455,.153
+RF,balanced,.460,.464,.146
+RF,idcs,.483,.522,.148
+GB,standard,.442,.445,.196
+GB,balanced,.451,.464,.195
+GB,idcs,.409,.434,.204
