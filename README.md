@@ -64,36 +64,6 @@ python -m jupyter lab notebooks/Explorar_reproducibilidad.ipynb
 las predicciones, las contribuciones SHAP, los coeficientes LIME, las tablas CSV y
 fragmentos LaTeX. `docs/VALIDATION.md` documenta las verificaciones realizadas.
 
-## Correcciones relevantes respecto al ZIP anterior
-
-1. En UCI, `kredit = 0` significa **malo**, y `1` **bueno**. Ahora se convierte
-   explicitamente a `bad_credit = 1 - kredit`; hay 300 malos y 700 buenos.
-2. El acceso actual verificado es UCI **573**, DOI `10.24432/C5QG88`. Se conserva
-   el archivo oficial y su tabla de codigos. El ID 522 del paper es una referencia
-   anterior al repositorio; no se usa para la adquisicion de este paquete.
-3. El preprocesamiento se ajusta una sola vez en los 550 registros de fitting,
-   antes del bootstrap. Edad, estatus personal/sexo y trabajador extranjero quedan
-   fuera del modelo; edad se guarda solo para la auditoria.
-4. La huella de datos incluye el archivo fuente y el target, no solo X.
-5. Se distingue perdida por etiqueta realizada de perdida esperada por el modelo.
-6. Se implementan los experimentos faltantes, con salidas por caso y verificaciones.
-
-## Limite importante para el paper
-
-No se conservaron las particiones ni los modelos originales que produjeron las
-tablas del PDF. Este paquete congela un **nuevo** split y documenta decisiones
-faltantes (regularizacion de calibracion, semillas LIME, referencias y empates).
-Las cifras originales **no quedan certificadas** por esta reconstruccion.
-
-`results/reference_run/manuscript_comparison.csv` compara 203 celdas/numeros con
-el manuscrito; las discrepancias permanecen visibles. No se buscaron semillas para
-forzar coincidencias. `docs/MANUSCRIPT_UPDATE_REQUIRED.md` describe los cambios
-necesarios antes de afirmar que el paper es numericamente reproducible con este ZIP.
-
-LendingClub y HMDA son extensiones planeadas, sin resultados en este paquete.
-Tampoco hay una validacion juridica automatica, ganancias monetarias observadas,
-estimaciones de capital regulatorio ni efectos sistemicos estimados.
-
 ## English reviewer guide
 
 Run `python run_experiments.py --out results/my_run` after installing the locked
