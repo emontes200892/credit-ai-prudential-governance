@@ -43,27 +43,6 @@ python -m pip install -r requirements-dev.txt
 python -m pytest tests -q
 python -m jupyter lab notebooks/Explorar_reproducibilidad.ipynb
 ```
-
-## Que reproduce
-
-| Manuscrito | Implementacion y salida |
-|---|---|
-| Secciones 3-4 | 1,000 registros; 17 predictores; particiones 550/150/100/200 congeladas |
-| Tabla 1 | LR, RF, GB; standard, balanced, IDCS; 5 bootstraps; politicas U y E |
-| Tabla 2 | 2,000 bootstraps pareados sobre casos de prueba; referencia LR-standard-U |
-| Tabla 3 | SHAP agrupado en el logit calibrado; overlap y cambios de decision |
-| Seccion 6.2 | 20 casos x 3 semillas LIME, 1,500 muestras por explicacion |
-| Tabla 4 | Revision de 5%, 10%, 20%; aleatoria, cercania al umbral, inestabilidad y combinada |
-| Seccion 5 | Sin mejora, revision imperfecta y cota oraculo; costo cobrado por revision |
-| Tabla 5 | 9 escenarios de costos, con ensamble RF-standard fijo |
-| Tabla 6 | Auditoria descriptiva de edad; denominadores y conteos incluidos |
-| Figuras 1-2 | Graficas generadas desde las salidas de esta ejecucion |
-| Seccion 7 | Dossiers tecnicos con score, politica, costos y factores; sin validacion legal empirica |
-
-`results/reference_run/` contiene una ejecucion real, los 45 modelos serializados,
-las predicciones, las contribuciones SHAP, los coeficientes LIME, las tablas CSV y
-fragmentos LaTeX. `docs/VALIDATION.md` documenta las verificaciones realizadas.
-
 ## English reviewer guide
 
 Run `python run_experiments.py --out results/my_run` after installing the locked
